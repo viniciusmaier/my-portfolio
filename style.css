@@ -1,0 +1,439 @@
+
+@font-face{
+    font-family: SuperMario;
+    src: url(SuperMario256.ttf);
+}
+
+
+  
+
+
+.header_Caixa{
+    background-color: gold;
+
+}
+.Caixa{
+    
+    width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+
+    
+    
+    
+}
+
+.Caixa__Flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:100px;
+    
+
+
+
+    
+}
+
+.Caixa__Navegacao_Listas{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+    
+    
+ }
+    
+
+#itens {
+    
+    margin: 5px;
+    font-size: 20px;
+    font-family: SuperMario;
+    color: red;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 2px;
+    text-decoration: none;
+    
+   }
+
+
+
+/*Main*/
+
+.SobreMim{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+    
+    
+}
+
+
+
+.titulo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    margin: 30px 250px 0 0;
+    font-family: SuperMario;
+    color: red;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 3px;
+
+
+    
+ }
+
+ .Paragrafos{
+    margin: 20px 30px 30px 40px;
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+
+ }
+
+
+
+
+
+ .Bloco-projeto__Canos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+    padding: 20px;
+
+
+ }
+ .Bloco-Projeto > h1{
+    align-items: flex-start;
+    margin: 30px 0 20px 250px;
+ }
+ .job{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+ }
+
+ .Bloco-projeto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+ .Bloco-projeto__Titulo{
+    margin: 0 0 10px 0;
+    font-family: "SuperMario";
+    color: #2F48DE;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+    
+    
+
+ }
+ .Bloco-Habilidades{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: center;
+    
+    
+    
+    
+    }
+ .Bloco-Habilidade__1{
+  text-align: center; 
+  border: 5px solid #000;
+  border-radius: 20%;
+  width: 130px;
+  margin: 0 5px;
+ 
+ 
+    
+ }
+
+    
+.Bloco-Habilidade__Titulo{
+    font-size: 20px;
+    font-family: 'SuperMario';
+    color: #EDE934;
+    -webkit-text-stroke-color: #F12B37;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+.Bloco-Contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.Bloco-Contato__Titulo{
+    -webkit-text-stroke-width: 2px;
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+}
+
+.RodaPe{
+    background-image: url(Imagens-Portifolio/fase_mario.png);
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px){
+   .Caixa__Navegacao_Listas{
+    flex-direction: row;
+   }
+
+   .menu{
+    display: none;
+   }
+    
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+/*CABEÇALHO*/
+.Caixa__Flex{
+    padding: 0px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  
+    
+
+    
+}
+
+   
+.Caixa__Navegacao_Listas{ 
+    
+    display: none;  
+    background-color: #000;
+    padding-bottom: 40px;
+    padding: 20px;
+    border-radius: 20%;
+    position: absolute;
+    top: 240px;
+
+
+    
+
+}
+
+
+#itens{
+    margin: 0 auto;
+    
+}
+
+    
+  
+    
+
+
+.Caixa__Flex__Navegacao{
+    max-width: 580;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+} 
+
+/*MENU*/    
+#menu{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 20%;
+    border-color: red;
+    justify-content: center;
+    margin: 20px;
+    
+    
+}
+#menu:hover{
+    background-color: #cccccc;
+    transform: scale(0.8);
+    transition: 0.5s;
+    
+}
+
+
+.Hamburger_Menu{ 
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000000;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    
+
+}
+.Hamburger_Menu:before,
+.Hamburger_Menu:after {
+    background-color: #000000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  
+
+}
+
+.Hamburger_Menu:before{
+    position: absolute;
+    top: -10px;
+}
+.Hamburger_Menu::after{
+    position: absolute;
+    top: 10px;
+
+}
+
+/*Main*/
+.SobreMim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.titulo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative; 
+    margin: 30px 10px 0 40px;
+    font-family: SuperMario;
+    color: red;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 3px;
+
+
+    
+ }
+ .Paragrafos{
+    margin: 20px 40px 30px 40px;
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+
+ }
+ .Bloco-projeto__Canos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 10px 0 40px;
+    padding: 20px;
+
+
+ }
+ .job{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+ }
+
+
+ .Bloco-projeto__Titulo{
+    margin: 0 0 10px 0;
+    font-family: "SuperMario";
+    color: #2F48DE;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 1px;
+    
+
+ }
+ .Bloco-Habilidades{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: center;
+    
+    
+    
+    
+    }
+ .Bloco-Habilidade__1{
+  text-align: center; 
+  border: 5px solid #000;
+  border-radius: 20%;
+  width: 130px;
+  margin: 0 5px;
+ 
+ 
+    
+ }
+
+    
+.Bloco-Habilidade__Titulo{
+    font-size: 20px;
+    font-family: 'SuperMario';
+    color: #EDE934;
+    -webkit-text-stroke-color: #F12B37;
+    -webkit-text-stroke-width: 2px;
+}
+
+
+.Bloco-Contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.Bloco-Contato__Titulo{
+    -webkit-text-stroke-width: 2px;
+    font-size: 20px;
+    margin: 10px 10px 10px 0;
+}
+
+
+
+}
+
+
+
